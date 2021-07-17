@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head';
+import Link from 'next/link'
 import fire from '../config/fire-conf'
 import CreatePost from '../components/CreatePost'
 
@@ -16,7 +17,6 @@ const Home = () => {
         ...doc.data()
       }));
       setBlog(blogs)
-      setOk(true)
     });
   },[]);
 
@@ -30,7 +30,9 @@ const Home = () => {
       <ul>
         {blog.map(blog => (
           <li key={blog.id}>
-            {blog.title}
+            <Link href="/blog/[id]" as={`/blog/${blog.id}`}>
+              <a>{blog.title}</a>
+            </Link>
           </li>
         ))}
       </ul>
