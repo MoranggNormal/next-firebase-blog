@@ -1,12 +1,12 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAhco62lO9gRZWc7x3yPewcl18ViiDlfe4",
-  authDomain: "blog-next-2b5f8.firebaseapp.com",
-  projectId: "blog-next-2b5f8",
-  storageBucket: "blog-next-2b5f8.appspot.com",
-  messagingSenderId: "505562537482",
-  appId: "1:505562537482:web:3d6944f238036fc5f709f3"
+  apiKey: "AIzaSyBq2tKNdz3BsSGC8c5Zmn0v9jwkG3Dd734",
+  authDomain: "blog-test-af435.firebaseapp.com",
+  projectId: "blog-test-af435",
+  storageBucket: "blog-test-af435.appspot.com",
+  messagingSenderId: "344918880906",
+  appId: "1:344918880906:web:43580f2645707d352b7373"
 };
 
 try {
